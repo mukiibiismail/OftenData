@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40953326-72DE-4EBA-B1B7-AE3FBBBB4322}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OftenDATA.My.MyApplication</StartupObject>
+    <RootNamespace>OftenDATA</RootNamespace>
+    <AssemblyName>OftenDATA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OftenDATA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OftenDATA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmFileUpload.Designer.vb">
+      <DependentUpon>frmFileUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFileUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadPdf.Designer.vb">
+      <DependentUpon>frmReadPdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReadPdf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadAllItems.Designer.vb">
+      <DependentUpon>frmLoadAllItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadAllItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllUsers.Designer.vb">
+      <DependentUpon>frmAllUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusinessCard.Designer.vb">
+      <DependentUpon>frmBusinessCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusinessCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangepassAll.Designer.vb">
+      <DependentUpon>frmChangepassAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangepassAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContacts.Designer.vb">
+      <DependentUpon>frmContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContacts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuestBook.Designer.vb">
+      <DependentUpon>frmGuestBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuestBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHiddenItems.Designer.vb">
+      <DependentUpon>frmHiddenItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHiddenItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportItems.Designer.vb">
+      <DependentUpon>frmImportItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInWardFiles.Designer.vb">
+      <DependentUpon>frmInWardFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInWardFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItem.Designer.vb">
+      <DependentUpon>frmItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLicence.Designer.vb">
+      <DependentUpon>frmLicence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLicence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLicenceDetails.Designer.vb">
+      <DependentUpon>frmLicenceDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLicenceDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadStaff.Designer.vb">
+      <DependentUpon>frmLoadStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogins.Designer.vb">
+      <DependentUpon>frmLogins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookupData.Designer.vb">
+      <DependentUpon>frmLookupData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLookupData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookupDataReport.Designer.vb">
+      <DependentUpon>frmLookupDataReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLookupDataReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutWardFiles.Designer.vb">
+      <DependentUpon>frmOutWardFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutWardFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOwnerInfo.Designer.vb">
+      <DependentUpon>frmOwnerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOwnerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassChangeSingle.Designer.vb">
+      <DependentUpon>frmPassChangeSingle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassChangeSingle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReminders.Designer.vb">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReminders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportReminders.Designer.vb">
+      <DependentUpon>frmReportReminders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportReminders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaff.Designer.vb">
+      <DependentUpon>frmStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUploadFile.Designer.vb">
+      <DependentUpon>frmUploadFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUploadFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewAllFiles.Designer.vb">
+      <DependentUpon>frmViewAllFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewAllFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModCommon.vb" />
+    <Compile Include="ModConVar.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmFileUpload.resx">
+      <DependentUpon>frmFileUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadPdf.resx">
+      <DependentUpon>frmReadPdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadAllItems.resx">
+      <DependentUpon>frmLoadAllItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAllUsers.resx">
+      <DependentUpon>frmAllUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangepassAll.resx">
+      <DependentUpon>frmChangepassAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContacts.resx">
+      <DependentUpon>frmContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuestBook.resx">
+      <DependentUpon>frmGuestBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHiddenItems.resx">
+      <DependentUpon>frmHiddenItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportItems.resx">
+      <DependentUpon>frmImportItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInWardFiles.resx">
+      <DependentUpon>frmInWardFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItem.resx">
+      <DependentUpon>frmItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLicence.resx">
+      <DependentUpon>frmLicence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLicenceDetails.resx">
+      <DependentUpon>frmLicenceDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadStaff.resx">
+      <DependentUpon>frmLoadStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogins.resx">
+      <DependentUpon>frmLogins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLookupData.resx">
+      <DependentUpon>frmLookupData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLookupDataReport.resx">
+      <DependentUpon>frmLookupDataReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutWardFiles.resx">
+      <DependentUpon>frmOutWardFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOwnerInfo.resx">
+      <DependentUpon>frmOwnerInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassChangeSingle.resx">
+      <DependentUpon>frmPassChangeSingle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminders.resx">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportReminders.resx">
+      <DependentUpon>frmReportReminders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaff.resx">
+      <DependentUpon>frmStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUploadFile.resx">
+      <DependentUpon>frmUploadFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewAllFiles.resx">
+      <DependentUpon>frmViewAllFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
